@@ -4,7 +4,6 @@
 Readers often do not have time to read full news articles, while headlines alone are not enough to convey complete context. This project explores automatic summarization of news stories using:
 
 - A Transformer-based approach (T5)
-- An Encoder-Decoder BiLSTM baseline
 
 The goal is to generate short, coherent, and informative summaries from long-form news content.
 
