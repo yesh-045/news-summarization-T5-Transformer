@@ -1,4 +1,4 @@
-# News Summarization Using T5 Transformer and BiLSTM
+# News Summarization Using T5 Transformer
 
 ## Overview
 Readers often do not have time to read full news articles, while headlines alone are not enough to convey complete context. This project explores automatic summarization of news stories using:
@@ -18,12 +18,10 @@ The dataset is split into training and test sets before model training.
 ## Model Approaches
 
 ### 1. T5 Transformer
-The T5 model is fine-tuned on the news summarization task. It produced more precise summaries than the BiLSTM baseline.
+The T5 model is fine-tuned on the news summarization task.
 
 ![T5 task framing examples](docs/t5_info.png)
 
-### 2. Encoder-Decoder BiLSTM
-An Encoder-Decoder architecture with BiLSTM and embedding layers is implemented as a baseline.
 
 ![BiLSTM layer architecture summary](docs/t5_layer_architecture.png)
 
@@ -40,7 +38,6 @@ Train and test loss trends across epochs:
 ![Train vs test loss curve](docs/loss_curve.png)
 
 ## Results
-- The Encoder-Decoder BiLSTM model reached around 46% accuracy.
 - The fine-tuned T5 model generated more coherent and precise summaries.
 
 ![Result](docs/result.png)
@@ -49,7 +46,6 @@ Train and test loss trends across epochs:
 
 - `code/`
   - `transformers-summarization-t5.ipynb`: T5 fine-tuning workflow
-  - `LSTM_model.ipynb`: BiLSTM model training and evaluation
   - `evaluation/evaluation.ipynb`: Similarity-based evaluation and analysis
 - `data/`: Dataset and split files
 - `docs/`: Project images used in this README
@@ -57,8 +53,7 @@ Train and test loss trends across epochs:
 ## How To Use
 
 1. Open `code/transformers-summarization-t5.ipynb` to run T5 fine-tuning.
-2. Open `code/LSTM_model.ipynb` to train and evaluate the BiLSTM baseline.
-3. Open `code/evaluation/evaluation.ipynb` to compute cosine similarity and review model outputs.
+2. Open `code/evaluation/evaluation.ipynb` to compute cosine similarity and review model outputs.
 
 ## References
 - [T5 paper](https://arxiv.org/abs/1910.10683)
