@@ -66,4 +66,4 @@ Train and test loss trends across epochs:
 - [News Summary dataset (Kaggle)](https://www.kaggle.com/sunnysai12345/news-summary)
 
 ## Conclusion
-This project shows that Transformer-based summarization (T5) is more effective than the BiLSTM baseline for this dataset, producing higher-quality summaries with better coherence.
+This project shows that Transformer-based summarization (T5) is more effective, producing higher-quality summaries with better coherence.
